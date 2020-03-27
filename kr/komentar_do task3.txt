@@ -1,0 +1,1 @@
+Тип даних функції і elem має бути long int , щоб не було stack overflow 
