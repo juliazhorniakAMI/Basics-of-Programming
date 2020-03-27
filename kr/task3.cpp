@@ -13,7 +13,7 @@ int main()
 
     int elem = -1;
     double sum = elem;
-    for (int i = 0; i < 7; ++i) {
+    for (int i = 0; i < 7; i++) {
         elem = funct(elem);
         sum += elem;
     }
