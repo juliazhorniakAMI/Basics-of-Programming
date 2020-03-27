@@ -11,9 +11,9 @@ double funct(int x) {
 int main()
 {
 
-    int elem = 5;
+    int elem = -1;
     double sum = elem;
-    for (int i = 0; i < 6; ++i) {
+    for (int i = 0; i < 7; ++i) {
         elem = funct(elem);
         sum += elem;
     }
