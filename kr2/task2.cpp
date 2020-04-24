@@ -10,11 +10,11 @@ void rotateMatrix(float** mat,int n)
 {
     for (int x = 0; x < n / 2; x++)
     {
-        for (int y = x; y < n - x - 1; y++)
+        for (int y = x; y < n - x - 1; y++)//здійснюємо обхід по матриці
         {
-            float temp = mat[x][y];
+            float temp = mat[x][y];//ств тимчасову матрицю
             mat[x][y] = mat[y][n - 1 - x];
-            mat[y][n - 1 - x] = mat[n - 1 - x][n - 1 - y];
+            mat[y][n - 1 - x] = mat[n - 1 - x][n - 1 - y];//здійснюємо оберт матриці на 90 градусів проти год стрілки
             mat[n - 1 - x][n - 1 - y] = mat[n - 1 - y][x];
             mat[n - 1 - y][x] = temp;
         }
