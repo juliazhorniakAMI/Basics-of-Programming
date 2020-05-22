@@ -16,7 +16,12 @@ int main() {
 	 int i = 0;
 
 	Person pers[10];
+ try {
+        if (!fin) {
 
+            throw "Uh oh, SomeText.txt could not be opened for reading!" ;
+
+        }
 	while (fin.getline(arr, 100))
 	{
 		char* pch;
@@ -91,5 +96,10 @@ int main() {
 	}
  
    fout.close();
+ }
+	catch (const char* exception) 
+    {
+        std::cerr << "Error: " << exception << '\n';
+    }
 	return 0;
 }
